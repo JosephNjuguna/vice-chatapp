@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.oskip.bitapp.ConnectWithUs">
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Alan Meh "
+        android:textColor="#1620b3"
+        android:background="@drawable/editext3"
+        android:textSize="12sp"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_toEndOf="@+id/imageView6"
+        android:layout_marginTop="9dp"/>
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" alanmeh58@gmail.com "
+        android:background="@drawable/editext3"
+        android:textColor="#1620b3"
+        android:textSize="12sp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/imageView6"/>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/com_facebook_button_icon_blue"
+        android:layout_above="@+id/imageView6"
+        android:layout_alignParentStart="true"/>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/common_google_signin_btn_icon_dark_normal"/>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/phonecall"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/imageView6"
+        android:layout_alignEnd="@+id/imageView6"/>
+    <TextView
+        android:id="@+id/textView25"
+        android:background="@drawable/editext3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" +254798695971 "
+        android:textColor="#1620b3"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/imageView6"
+        android:layout_toEndOf="@+id/imageView6"/>
+    <TextView
+        android:layout_margin="5dp"
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView4"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="17dp"
+        android:text="contact the developer on:"
+        android:textColor="#1620b3"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:layout_margin="5dp"
+        android:textColor="#1620b3"
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView21"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="60dp"
+        android:text="for more suggestions and what to be done on the app to improve user experience please:"/>
+    <TextView
+        android:textColor="#1620b3"
+        android:id="@+id/textView59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/editext3"
+        android:text=" Terms and Conditions Apply. "/>
+    <TextView
+        android:textColor="#1620b3"
+        android:background="@drawable/editext"
+        android:id="@+id/textView61"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView24"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:padding="4dp"
+        android:textSize="26dp"
+        android:text="VICECHAT"/>
+</RelativeLayout>

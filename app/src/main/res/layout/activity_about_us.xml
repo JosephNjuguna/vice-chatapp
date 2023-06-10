@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_edittext"
+    android:layout_height="match_parent"
+    tools:context="com.oskip.bitapp.AboutUs">
+
+    <TextView
+        android:textColor="#1620b3"
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Oskip Developers."
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="209dp"/>
+
+    <TextView
+        android:textColor="#1620b3"
+        android:id="@+id/textView54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView20"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Based in : Nairobi,Kenya."/>
+
+    <TextView
+        android:textColor="#1620b3"
+        android:id="@+id/textView55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView54"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Started and Founded : 2016"/>
+
+    <TextView
+        android:textColor="#1620b3"
+        android:id="@+id/textView56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView55"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Specialized in mobile app and web dev."/>
+
+    <TextView
+        android:textColor="#1620b3"
+        android:id="@+id/textView57"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terms and Condition Apply."
+        android:layout_below="@+id/textView56"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:textColor="#1620b3"
+        android:id="@+id/textView58"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView57"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Privacy Policy."/>
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                tools:context="com.oskip.bitapp.Status"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_height="wrap_content">
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/chat_background_purple"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_alignBottom="@+id/imageView30"
+        android:id="@+id/imageView31"
+        android:layout_width="40dp"
+        android:layout_marginStart="6dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:background="@mipmap/circle_spin"/>
+
+        <TextView
+            android:id="@+id/statusname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView31"
+            android:layout_toEndOf="@+id/imageView31"
+            android:hint="username"
+            android:textColor="#ffff"
+            android:textColorHint="#ffff" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="65dp"
+            android:layout_height="12dp"
+            android:layout_below="@+id/statusname"
+            android:layout_marginTop="4dp"
+            android:textSize="10sp"
+            android:layout_toEndOf="@+id/imageView31"
+            android:hint="00:00"
+            android:textColor="#ffff"
+            android:textColorHint="#ffff" />
+    <ImageView
+        android:id="@+id/imageView34"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignTop="@+id/textView15"
+        android:layout_alignBottom="@+id/textView15"
+        android:layout_marginStart="4dp"
+        android:layout_toEndOf="@+id/textView15"
+        android:src="@mipmap/ic_view" />
+    <TextView
+        android:id="@+id/textView75"
+        android:layout_width="wrap_content"
+        android:layout_height="12dp"
+        android:layout_marginStart="6dp"
+        android:layout_alignTop="@+id/textView15"
+        android:layout_alignBottom="@+id/textView15"
+        android:layout_toEndOf="@+id/imageView34"
+        android:hint="1"
+        android:textSize="10sp"
+        android:textColor="#ffff"
+        android:textColorHint="#ffff" />
+ </RelativeLayout>
+</android.support.v7.widget.CardView>

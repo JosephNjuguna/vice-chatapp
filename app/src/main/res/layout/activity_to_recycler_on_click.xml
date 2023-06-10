@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/commentstypo"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    tools:context="com.oskip.bitapp.ToRecyclerOnClick">
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="4dp"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:background="@drawable/editext" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_margin="4dp"
+        android:background="@drawable/searchdeco"
+        android:layout_below="@+id/imageViewlikeBackground"
+        android:layout_marginTop="2dp" />
+    <RelativeLayout
+        android:id="@+id/imageViewlikeBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/pici"
+        android:layout_margin="2dp"
+        android:background="@drawable/searchdeco"
+        android:padding="2dp">
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            android:layout_alignParentStart="true"
+            android:src="@mipmap/like" />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView22"
+            android:layout_marginBottom="6dp"
+            android:layout_toEndOf="@+id/imageView22"
+            android:hint="0"
+            android:textColor="#1620b3"
+            android:textColorHint="#1620b3" />
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toEndOf="@+id/textView42"
+            android:src="@mipmap/full_blue_heart" />
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView23"
+            android:layout_marginBottom="6dp"
+            android:layout_toEndOf="@+id/imageView21"
+            android:hint="0"
+            android:textColor="#1620b3"
+            android:textColorHint="#1620b3" />
+
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/imageView21"
+            android:layout_toEndOf="@+id/textView43"
+            android:src="@mipmap/comment_blue" />
+
+        <TextView
+            android:id="@+id/textView45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView23"
+            android:layout_marginBottom="6dp"
+            android:layout_toEndOf="@+id/imageView23"
+            android:hint="0"
+            android:textColor="#1620b3"
+            android:textColorHint="#1620b3" />
+    </RelativeLayout>
+
+
+       <RelativeLayout
+           android:id="@+id/pici"
+           android:layout_below="@+id/imageView20"
+           android:layout_width="match_parent"
+           android:layout_margin="4dp"
+           android:background="@drawable/searchdeco"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:id="@+id/textView44"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/textView30"
+               android:layout_alignStart="@+id/textView30"
+               android:padding="4dp"
+               android:textColor="#FF000000" />
+           <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView8"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:layout_alignParentStart="true"
+            android:src="@mipmap/circle_spin" />
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="4dp"
+            android:layout_alignTop="@+id/imageView8"
+            android:layout_toEndOf="@+id/imageView8"
+            android:hint="username"
+            android:textColor="#FF000000"/>
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView44"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/editext3"
+            android:text=" comment "
+            android:layout_marginEnd="4dp"
+            android:textColor="#FF000000" />
+</RelativeLayout>
+        <ImageView
+            android:id="@+id/emoji_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/searchdeco"
+            android:layout_alignBottom="@+id/emojicon_edit_text"
+            android:src="@mipmap/emo"/>
+        <ImageView
+            android:layout_marginBottom="4dp"
+            android:layout_alignBottom="@+id/emojicon_edit_text"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/submit_btn"
+            android:layout_width="40dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/searchdeco"
+            android:layout_height="40dp"
+            android:src="@android:drawable/ic_menu_send" />
+        <hani.momanii.supernova_emoji_library.Helper.EmojiconEditText
+            android:layout_marginStart="2dp"
+            android:layout_marginBottom="2dp"
+            android:id="@+id/emojicon_edit_text"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/emoji_btn"
+            android:background="@drawable/searchdeco"
+            android:layout_toStartOf="@+id/submit_btn"
+            android:hint="Type your comment here"
+            android:padding="12dp"
+            emojicon:emojiconSize="28sp" />
+</RelativeLayout>

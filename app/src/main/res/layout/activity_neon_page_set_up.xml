@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_edittext"
+    android:layout_height="match_parent"
+    tools:context="com.oskip.bitapp.NeonPageSetUp">
+    <RelativeLayout
+        android:background="@color/bg_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView10"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@mipmap/ic_dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"/>
+    <EditText
+        android:background="@drawable/editext"
+        android:id="@+id/editText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView10"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:textSize="16sp"
+        android:textColorHint="#1620b3"
+        android:textColor="#1620b3"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPersonName"
+        android:hint=" page name " />
+    <EditText
+        android:background="@drawable/editext"
+        android:textColorHint="#1620b3"
+        android:textColor="#1620b3"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:id="@+id/editText6"
+        android:layout_below="@+id/editText"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="page owners` name"/>
+    <EditText
+        android:background="@drawable/editext"
+        android:textColorHint="#1620b3"
+        android:textColor="#1620b3"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_marginTop="13dp"
+        android:id="@+id/editText7"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText6"
+        android:ems="10"
+        android:textSize="16sp"
+        android:inputType="textPersonName"
+        android:hint="page type"/>
+    <Button
+        android:padding="8dp"
+        android:id="@+id/button11"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/editText7"
+        android:layout_marginEnd="36dp"
+        android:textColor="#ffff"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/buttonstroke1"
+        android:text=" Create Page "/>
+    <Button
+        android:id="@+id/buttoncancel"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button11"
+        android:layout_alignBottom="@+id/button11"
+        android:layout_alignStart="@+id/editText7"
+        android:background="@drawable/buttonstroke1"
+        android:padding="8dp"
+        android:text=" cancel "
+        android:textColor="#ffff" />
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

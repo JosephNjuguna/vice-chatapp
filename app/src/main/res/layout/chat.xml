@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/bg_edittext"
+    android:id="@+id/bottomlayout"
+    tools:context="com.oskip.bitapp.Chat">
+    <include layout="@layout/chat_bar"
+        android:id="@+id/app_chat_bar"/>
+    <RelativeLayout
+        android:id="@+id/bottom2"
+        android:layout_below="@+id/app_chat_bar"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/emojicon_edit_text"
+        android:layout_height="wrap_content">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerViewmessages"
+            android:layout_alignParentStart="true"
+            android:divider="@android:color/transparent"
+            android:stackFromBottom="true"
+            android:transcriptMode="alwaysScroll"/>
+    </RelativeLayout>
+    <ImageView
+        android:layout_alignBottom="@+id/emojicon_edit_text"
+        android:id="@+id/emoji_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/buttonstroke"
+        android:src="@mipmap/emo2"/>
+    <ImageView
+        android:layout_alignBottom="@+id/emojicon_edit_text"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/submit_btn"
+        android:layout_width="40dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_height="40dp"
+        android:background="@drawable/buttonstroke"
+        android:src="@android:drawable/ic_menu_send" />
+    <hani.momanii.supernova_emoji_library.Helper.EmojiconEditText
+        android:id="@+id/emojicon_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/emoji_btn"
+        android:layout_toStartOf="@+id/submit_btn"
+        android:background="@drawable/buttonstroke"
+        android:layout_alignParentBottom="true"
+        android:hint="Type your message"
+        android:textColorHint="#ffff"
+        android:textColor="#ffff"
+        android:padding="12dp"
+        android:layout_marginBottom="2dp"
+        emojicon:emojiconSize="28sp" />
+</RelativeLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.oskip.bitapp.UserFriendsAccount">
+    <RelativeLayout
+        android:id="@+id/stalk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="61dp"
+        android:id="@+id/userprofileimage"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_margin="12dp"
+        android:background="@mipmap/circle_spin"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:padding="8dp"
+        android:textColorHint="#1620b3"
+        android:textColor="#1620b3"
+        android:background="@drawable/searchdeco"
+        android:id="@+id/userprofilename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_below="@+id/userprofileimage"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:textColorHint="#1620b3"
+        android:textColor="#1620b3"
+        android:background="@drawable/searchdeco"
+        android:padding="8dp"
+        android:layout_marginStart="4dp"
+        android:id="@+id/userprifilecountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userprofilename"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:textColor="#FF000000"
+        android:background="@drawable/text"
+        android:padding="8dp"
+        android:id="@+id/userprofilefriends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="friends"
+        android:layout_marginStart="4dp"
+        android:layout_below="@+id/userprifilecountry"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:textColor="#1620b3"
+        android:background="@drawable/searchdeco"
+        android:id="@+id/sendFriendRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@+id/textView26"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:padding="8dp"
+        android:text="   SEND FRIEND REQUEST  " />
+        <Button
+            android:padding="8dp"
+            android:id="@+id/button13followlo"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:textColor="#FF000000"
+            android:background="@drawable/text"
+            android:text=" FOLLOW + "
+            android:layout_marginStart="5dp"
+            android:layout_alignTop="@+id/textView51"
+            android:layout_toEndOf="@+id/textView26"/>
+        <Button
+            android:padding="8dp"
+            android:id="@+id/following"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:textColor="#FF000000"
+            android:background="@drawable/text"
+            android:text="FOLLOWING"
+            android:layout_marginStart="5dp"
+            android:visibility="invisible"
+            android:layout_alignTop="@+id/textView51"
+            android:layout_toEndOf="@+id/textView26"/>
+    <Button
+        android:id="@+id/declineFriendRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@+id/sendFriendRequest"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:padding="8dp"
+        android:textColor="#1620b3"
+        android:background="@drawable/searchdeco"
+        android:text="CANCEL FRIEND REQUEST"
+
+       />
+
+    <TextView
+        android:padding="8dp"
+        android:id="@+id/textView17"
+        android:textColorHint="#1620b3"
+        android:textColor="#1620b3"
+        android:hint=" 0 "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginBottom="3dp"
+        android:layout_alignBottom="@+id/userprofilefriends"
+        android:layout_toEndOf="@+id/userprofilefriends"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:padding="8dp"
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint=" 0 "
+        android:layout_marginBottom="3dp"
+        android:textColorHint="#1620b3"
+        android:textColor="#1620b3"
+        android:textSize="12sp"
+        android:layout_alignBottom="@+id/userprofilefriends"
+        android:layout_toEndOf="@+id/textView51"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:padding="8dp"
+        android:textColor="#FF000000"
+        android:background="@drawable/text"
+        android:layout_alignBottom="@+id/userprofilefriends"
+        android:layout_toEndOf="@+id/textView17"
+        android:textSize="16sp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" followers "/>
+
+
+
+    </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/newfriendspost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/stalk"/>
+</RelativeLayout>

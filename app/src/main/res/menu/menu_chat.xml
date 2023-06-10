@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.oxygen.socialites.ChatActivity">
+    <item
+        android:id="@+id/action_change_wallpaper"
+        android:orderInCategory="100"
+        android:title="Change Chat Wallpaper"
+        app:showAsAction="never"/>
+</menu>

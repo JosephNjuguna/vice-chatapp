@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_edittext"
+    tools:context="com.oskip.bitapp.Phonesignup">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:padding="4dp"
+            android:background="@drawable/text1"
+            android:text=" Create your account by filling the fields below: "
+            android:textColor="#ffff"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView15"
+            android:layout_width="185dp"
+            android:layout_height="185dp"
+            android:layout_below="@+id/textView37"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/buttonstroke"
+            android:src="@mipmap/ic_dp" />
+
+        <EditText
+            android:layout_margin="4dp"
+            android:id="@+id/editText17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/editext"
+            android:ems="10"
+            android:hint="name"
+            android:layout_below="@+id/imageView15"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:textAlignment="center"
+            android:textColor="#ff000000"/>
+        <EditText
+            android:layout_margin="4dp"
+            android:id="@+id/editText8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText17"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:background="@drawable/editext"
+            android:hint="enter your phone number : "
+            android:inputType="phone"
+            android:padding="12dp"
+            android:textAlignment="center"
+            android:textColor="#ff000000"/>
+        <EditText
+            android:layout_margin="4dp"
+            android:id="@+id/editText12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editText8"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/auth_background_white"
+            android:ems="10"
+            android:hint="verification code"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textColor="#ff000000"
+            android:visibility="invisible" />
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText12"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonstroke"
+            android:padding="8dp"
+            android:text="NEXT"
+            android:textAlignment="center"
+            android:textColor="#ffff" />
+        <TextView
+            android:id="@+id/textView79"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView15"
+            android:layout_alignEnd="@+id/editText17"
+            android:layout_toEndOf="@+id/imageView15"
+            android:background="@drawable/text1"
+            android:text="  add an image  "
+            android:textColor="#ffff" />
+        <TextView
+            android:id="@+id/textView80"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/button5"
+            android:layout_marginTop="8dp"
+            android:text="Standard rate of charges may Apply"
+            android:textColor="#ffff" />
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/button5"
+            android:layout_toEndOf="@+id/imageView15"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

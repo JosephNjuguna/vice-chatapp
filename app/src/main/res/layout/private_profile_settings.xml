@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.oskip.bitapp.PrivateProfileSettings">
+
+    <RelativeLayout
+        android:layout_margin="8dp"
+        android:id="@+id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_margin="10dp"
+            android:id="@+id/privateaccountdp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@mipmap/circle_spin" />
+        <TextView
+            android:textColor="#FF000000"
+            android:layout_alignBottom="@+id/privateaccountdp"
+            android:id="@+id/nametext"
+            android:layout_marginBottom="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/privateaccountdp"
+            android:hint="name" />
+        <ImageView
+            android:layout_margin="10dp"
+            android:layout_below="@+id/privateaccountdp"
+            android:id="@+id/notificationacc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:src="@mipmap/blue_notifications" />
+        <TextView
+            android:layout_marginBottom="14dp"
+            android:textColor="#FF000000"
+            android:id="@+id/notificationacctext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/notificationacc"
+            android:layout_toEndOf="@+id/notificationacc"
+            android:text="Notifications" />
+        <ImageView
+            android:id="@+id/chatsetting"
+            android:layout_below="@+id/notificationacc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@mipmap/blue_chat" />
+        <TextView
+            android:id="@+id/chatsettingtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/chatsetting"
+            android:layout_marginBottom="14dp"
+            android:textColor="#FF000000"
+            android:layout_toEndOf="@+id/privacy"
+            android:text="Chat Settings" />
+        <ImageView
+            android:id="@+id/privacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignStart="@+id/walletcoin"
+            android:layout_below="@+id/chatsetting"
+            android:layout_margin="10dp"
+            android:src="@mipmap/blue_privacy" />
+        <TextView
+            android:id="@+id/privacytext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:layout_alignBottom="@+id/privacy"
+            android:layout_toEndOf="@+id/privacy"
+            android:text="Privacy"
+            android:textColor="#FF000000" />
+        <ImageView
+            android:layout_margin="10dp"
+            android:id="@+id/invitefriends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/walletcoin"
+            android:layout_marginTop="16dp"
+            android:src="@mipmap/blue_friends" />
+        <TextView
+            android:textColor="#FF000000"
+            android:id="@+id/invitefriendstext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/invitefriends"
+            android:layout_marginBottom="14dp"
+            android:layout_toEndOf="@+id/invitefriends"
+            android:text="Invite Friends" />
+        <ImageView
+            android:layout_margin="10dp"
+            android:id="@+id/walletcoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/privacy"
+            android:layout_marginTop="11dp"
+            android:src="@mipmap/blue_wallet" />
+        <TextView
+            android:textColor="#FF000000"
+            android:id="@+id/walllettext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/walletcoin"
+            android:layout_marginBottom="14dp"
+            android:layout_toEndOf="@+id/walletcoin"
+            android:text="e-Wallet" />
+        <ImageView
+            android:id="@+id/redlogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/help"
+            android:layout_margin="10dp"
+            android:src="@mipmap/red_logout" />
+        <TextView
+            android:textColor="#FF000000"
+            android:id="@+id/logouttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/redlogout"
+            android:layout_marginBottom="14dp"
+            android:layout_toEndOf="@+id/redlogout"
+            android:text="Log Out" />
+        <ImageView
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/invitefriends"
+            android:layout_margin="10dp"
+            android:layout_marginTop="18dp"
+            android:src="@mipmap/blue_help" />
+        <TextView
+            android:textColor="#FF000000"
+            android:id="@+id/helptext"
+            android:layout_alignBottom="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:layout_toEndOf="@+id/help"
+            android:text="Help" />
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

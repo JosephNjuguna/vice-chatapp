@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_edittext"
+    tools:context="com.oskip.bitapp.startuppage">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/imageView16"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+    <RelativeLayout
+        android:background="@drawable/buttonstroke1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView16"
+        android:layout_alignStart="@+id/imageView16"
+        android:layout_below="@+id/imageView16"
+        android:layout_marginTop="16dp"
+        android:id="@+id/re">
+       <ImageView
+               android:id="@+id/imageView18"
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:src="@mipmap/white_call"/>
+       <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imageView18"
+            android:text="Phone Sign in"
+            android:textAlignment="center"
+            android:textColor="#ffff" />
+    </RelativeLayout>
+       <TextView
+           android:id="@+id/textView2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/textView13"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="82dp"
+           android:textColor="#ffff"
+           android:text="continue with" />
+       <TextView
+           android:id="@+id/textView5"
+           android:textColor="#ffff"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/textView81"
+           android:layout_marginTop="30dp"
+           android:layout_centerHorizontal="true"
+           android:text="By signing in you agree with our Term and Condition" />
+       <TextView
+           android:id="@+id/textView12"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentTop="true"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="18dp"
+           android:textColor="#ffff"
+           android:text="Welcome to" />
+       <TextView
+           android:id="@+id/textView13"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/textView12"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="17dp"
+           android:textSize="40sp"
+           android:textColor="#ffff"
+           android:text="VICECHAT" />
+       <TextView
+           android:id="@+id/textView81"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentStart="true"
+           android:layout_below="@+id/re"
+           android:layout_marginStart="6dp"
+           android:layout_marginTop="132dp"
+           android:padding="5dp"
+           android:background="@drawable/text1"
+           android:text="  have account?? log in  "
+           android:textColor="#ffff" />
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

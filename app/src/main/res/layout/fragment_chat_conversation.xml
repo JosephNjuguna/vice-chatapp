@@ -1,0 +1,29 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.oskip.bitapp.ChatFragment">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/userrealfriends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"/>
+</RelativeLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatchatbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="4dp"
+        android:src="@mipmap/floatchat"
+        android:visibility="visible"
+        app:backgroundTint="?attr/colorPrimaryDark"
+        app:borderWidth="0dp"
+        app:elevation="0dp" />
+</FrameLayout>

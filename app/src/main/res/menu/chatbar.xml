@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/call"
+        android:title="Voice Call"
+        android:icon="@mipmap/call"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/video"
+        android:title="Video Call"
+        android:icon="@mipmap/chat_video"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/setting"
+        android:title="background setting"
+        android:icon="@mipmap/settings"
+        app:showAsAction="always"/>
+
+</menu>
